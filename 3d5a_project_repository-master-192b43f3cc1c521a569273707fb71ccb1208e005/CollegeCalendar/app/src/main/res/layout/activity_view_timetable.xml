@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/li"
+    android:background="#ffe091">
+
+    <!-- The android:cursorVisible attribute enables/disables the blinking cursor -->
+
+    <TextView
+        android:id="@+id/dayOfWeekBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/blank_dayOfWeek"/>
+
+    <TextView
+        android:id="@+id/dateTitle"
+        android:text="@string/no_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/dayOfWeekBox"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/deleteAllButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/addNewEventButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/addNewEventButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addNewEvent_button"
+        android:textAlignment="center"
+        android:onClick="addNewEventButton"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/viewTomorrowButton"
+        android:text="@string/right"
+        android:onClick="viewTomorrowTimetable"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/viewYesterdayButton"
+        android:text="@string/left"
+        android:onClick="viewYesterdayTimetable"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:elegantTextHeight="false" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewYesterdayButton"
+        android:layout_above="@+id/addNewEventButton" />
+
+    <Button
+        android:id="@+id/viewClassesButton"
+        android:text="@string/viewClassesButton"
+        android:onClick="viewClasses"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"/>
+
+    <!--<Button
+        android:id="@+id/viewClassesButton"
+        android:text="@string/viewClassesButton"
+        android:onClick="viewClasses"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:id="@+id/viewEventsButton"
+        android:text="@string/ViewEventsButton"
+        android:onClick="viewEvents"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/viewClassesButton"
+        android:layout_alignBottom="@+id/viewClassesButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/viewTitle"
+        android:text="@string/no_view_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/viewTomorrowButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/viewMonthButton"
+        android:text="@string/viewMonthButton"
+        android:onClick="viewMonthButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/noEventsSaved_textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_button"
+        android:visibility="gone"
+        android:onClick="cancelDeletion"
+        android:id="@+id/cancelDeletionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button"
+        android:visibility="gone"
+        android:onClick="deleteButton"
+        android:id="@+id/deleteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

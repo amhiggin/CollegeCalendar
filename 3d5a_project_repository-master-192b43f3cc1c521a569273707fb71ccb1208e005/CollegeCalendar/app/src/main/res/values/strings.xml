@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">CollegeCalendar</string>
+    <string name="cc"> CC </string>
+
+    <string name="WELCOME">CollegeCalendar</string>
+    <string name="button1">Timetable</string>
+    <string name="button2">Today</string>
+    <string name="button3">Extras</string>
+    <string name="music">Need help concentrating? </string>
+    <string name="timer">Take a break! </string>
+    <string name="clickme"> Click Me! </string>
+    <string name="notif"> 10 Minutes </string>
+    <string name="play"> Play </string>
+
+
+    <string name="title_activity_button1">Button1Activity</string>
+    <string name="title_activity_button2">Button2Activity</string>
+    <string name="title_activity_button3">Button3Activity</string>
+    
+    <string name="view_timetable">View Timetable</string>
+    <string name="title_activity_view_timetable">ViewTimetable</string>
+    <string name="save_button">Save </string>
+    <string name="discard_button">Discard Changes</string>
+    <string name="date_entry_prompt">Enter a date</string>
+    <string name="no_date">The date has not been changed yet</string>
+    <string name="timeSlot1">9:00 - 10:00</string>
+    <string name="timeSlot2">10:00 - 11:00</string>
+    <string name="timeSlot3">11:00 - 12:00</string>
+    <string name="delete_button">Delete </string>
+    <string name="blank_title">No Title entered</string>
+    <string name="blank_location">No location entered</string>
+    <string name="addNewEvent_button"> New Event</string>
+    <string name="addNewClass_button"> New Class</string>
+    <string name="save_event">Save </string>
+    <string name="cancel_button">Cancel</string>
+    <string name="title_entry_prompt">Enter a title</string>
+    <string name="location_entry_prompt">Enter a location</string>
+    <string name="time_entry_prompt">Enter a time</string>
+    <string name="location">Location:</string>
+    <string name="title">ADD A TASK</string>
+    <string name="time">Time:</string>
+    <string name="title_activity_add_new_event">AddNewEvent</string>
+    <string name="blank_dayOfWeek">No day of week has been set</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="left"> &#x2770;</string>
+    <string name="right">&#x2771;</string>
+
+    <string name="error_fileNotDeleted">Error! Unable to delete file.</string>
+    <string name="freeTime">Free Time</string>
+    <string name="noLocation">No location</string>
+    <string name="allEventsDeleted">All events deleted.</string>
+    <string name="invalidTime">The time you have entered is invalid.</string>
+    <string name="eventSaved">Event saved.</string>
+    <string name="viewTodayButton"> Today</string>
+    <string name="viewClassesButton">View Classes</string>
+    <string name="ViewEventsButton">View Events</string>
+    <string name="no_view_set">No view has been set</string>
+    <string name="classes">Classes</string>
+    <string name="events">Events</string>
+    <string name="notes">Notes</string>
+    <string name="notes_title">ADD A NOTE</string>
+    <string name="notes_prompt">Make some notes...</string>
+    <string name="noteSaved">Note saved.</string>
+    <string name="noteDeleted">Note deleted.</string>
+    <string name="saveNotesButton">SAVE</string>
+
+    <string name="no_title_entered">(No title)</string>
+    <string name="save_changes">Save </string>
+    <string name="deleteEvent">Delete</string>
+    <string name="changesSaved">Changes saved.</string>
+    <string name="eventDeleted">Event deleted.</string>
+    <string name="classDeleted">Class deleted.</string>
+    <string name="title_activity_view_month">viewMonth</string>
+    <string name="viewMonthButton"> All Events</string>
+    <string name="viewDayButton">View Day</string>
+
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+
+    <string name="noEventsSaved">You have no events saved for today.</string>
+    <string name="noEventsSaved_month">You have no events saved for this month.</string>
+    <string name="noClassesSaved">You have no classes on today.</string>
+    <string name="classSaved">Class saved.</string>
+    <string name="addNewItem_button">Add New </string>
+    <string name="saveClassButton">Save </string>
+    <string name="title_activity_edit_note">editNote</string>
+    <string name="title_activity_to_do_list">ToDoList</string>
+    <string name="save_item">Save</string>
+    <string name="title_activity_add_to_do_item">AddToDoItem</string>
+    <string name="items">To Do List</string>
+    <string name="priority">Priority: </string>
+    <string name="itemSaved">Item Saved.</string>
+    <string name="itemDeleted">Item removed</string>
+    <string name="noItemsSaved">Item not saved</string>
+    <string name="addNewNote"> New Note</string>
+    <string name="saveNote">Save </string>
+    <string name="deleteNote">Delete </string>
+    <string name="noNotesSaved">You have not made any notes.</string>
+    <string name="noNoteEntered">(No note entered)</string>
+    <string name="title_activity_alarm_manager_broadcast_receiver">AlarmManagerBroadcastReceiver
+    </string>
+
+</resources>

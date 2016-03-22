@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CollegeCalendar</string>
+<<<<<<< HEAD
+
+    <string name="WELCOME">CollegeCalendar</string>
+    <string name="button1">Timetable</string>
+    <string name="button2">Today</string>
+    <string name="button3">Extras</string>
+    <string name="music">Need help concentrating?: </string>
+    <string name="timer">Take a break! </string>
+
+    <string name="title_activity_button1">Button1Activity</string>
+    <string name="title_activity_button2">Button2Activity</string>
+    <string name="title_activity_button3">Button3Activity</string>
+    
+=======
+>>>>>>> 6266d4d19185f2bafa001547b0b99113964d52dd
+    <string name="view_timetable">View Timetable</string>
+    <string name="title_activity_view_timetable">ViewTimetable</string>
+    <string name="free_time">Free Time</string>
+    <string name="save_button">Save Changes</string>
+    <string name="discard_button">Discard Changes</string>
+    <string name="date_entry_prompt">Enter a date</string>
+    <string name="no_date">The date has not been changed yet</string>
+    <string name="timeSlot1">9:00 - 10:00</string>
+    <string name="timeSlot2">10:00 - 11:00</string>
+    <string name="timeSlot3">11:00 - 12:00</string>
+    <string name="delete_button">Delete all</string>
+    <string name="blank_title">No Title entered</string>
+    <string name="blank_location">No location entered</string>
+    <string name="addNewEvent_button">Add New Event</string>
+    <string name="save_event">Save Event</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="title_entry_prompt">Enter a title</string>
+    <string name="location_entry_prompt">Enter a location</string>
+    <string name="time_entry_prompt">Enter a time</string>
+<<<<<<< HEAD
+    <string name="title_activity_add_new_event">AddNewEvent</string>
+    
+=======
+>>>>>>> 6266d4d19185f2bafa001547b0b99113964d52dd
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    tools:targetApi="11"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainMenu"
+    android:background="#ffe091"
+    android:contextClickable="true">
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:background="#ffe091"
+        android:firstDayOfWeek="1"
+        android:showWeekNumber="true"
+        android:clickable="true"
+        android:onClick="sendString"
+        android:weekNumberColor="#ffe091"
+        android:shownWeekCount="@integer/abc_config_activityDefaultDur"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp" />
+
+    <DatePicker
+        android:layout_width="2000dp"
+        android:layout_height="100dp"
+        android:calendarViewShown="false"
+        android:visibility="visible"
+        android:datePickerMode="calendar"
+        android:id="@+id/datePicker"
+        android:background="#ffe091"
+        android:headerBackground="#ffe091"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

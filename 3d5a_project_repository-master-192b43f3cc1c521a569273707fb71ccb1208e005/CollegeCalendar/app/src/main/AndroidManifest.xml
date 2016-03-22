@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ie.tcd.scss.amhiggin.collegecalendar" >
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/minilogover2"
+        android:label="@string/cc"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name=".MainMenu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayCalendar"
+            android:label="@string/title_activity_button1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Button3Activity"
+            android:label="@string/title_activity_button3"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".BasicDayselection" >
+        </activity>
+        <activity android:name=".ViewTimetable" >
+        </activity>
+        <activity
+            android:name=".AddNewEvent"
+            android:label="@string/title_activity_add_new_event"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".ViewNotes" >
+        </activity>
+        <activity android:name=".editEvent" >
+        </activity>
+        <activity
+            android:name=".viewMonth"
+            android:label="@string/title_activity_view_month"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".AddNewNote" >
+        </activity>
+        <activity
+            android:name=".editNote"
+            android:label="@string/title_activity_edit_note"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".ToDoList"
+            android:label="@string/title_activity_to_do_list"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AddToDoItem"
+            android:label="@string/title_activity_add_to_do_item"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".EditToDoItem" >
+        </activity>
+        <receiver android:name=".AlarmManagerBroadcastReceiver"/>
+
+    </application>
+
+</manifest>

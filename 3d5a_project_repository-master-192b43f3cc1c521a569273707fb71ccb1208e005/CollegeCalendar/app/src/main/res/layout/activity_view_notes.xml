@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ie.tcd.scss.amhiggin.collegecalendar.ViewNotes"
+    android:background="#ffe091">
+
+    <Button
+        android:id="@+id/addNewEventButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addNewNote"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:onClick="addNewEventButton"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewTitle" />
+
+    <!--<Button
+        android:id="@+id/viewClassesButton"
+        android:text="@string/viewClassesButton"
+        android:onClick="viewClasses"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+    <TextView
+        android:id="@+id/viewTitle"
+        android:text="@string/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/noEventsSaved_textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_button"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_background"
+        android:visibility="gone"
+        android:onClick="cancelDeletion"
+        android:id="@+id/cancelDeletionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_background"
+        android:onClick="deleteButton"
+        android:id="@+id/deleteButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<TextView
+        android:id="@+id/title_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/notes"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/my_notes"
+        android:hint="@string/notes_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="0"
+        android:gravity="top"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/saveNotesButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/title_notes"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/saveNotesButton"
+        android:onClick="saveNotesButton"
+        android:text="@string/saveNotesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>
